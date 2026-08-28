@@ -1,0 +1,19 @@
+.bestsellers {}
+
+.bestsellers-title {}
+
+.bestsellers-list {}
+
+.bestsellers-iten {
+    background: #fff;
+}
+
+.bestsellers-ill {}
+
+.bestsellers-caption {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+.header {}
+
+.main-nav {}
+
+.main-nav-list {}
+
+.main-nav-item {}
+
+.main-nav-link {
+font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:focus {
+    color: #fd9222;
+}

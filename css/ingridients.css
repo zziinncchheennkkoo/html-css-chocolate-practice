@@ -1,0 +1,15 @@
+.ingredients {}
+
+.ingredients-title {}
+
+.ingredients-list {}
+
+.ingredients-item {}
+
+.ingredients-ill {}
+
+.ingredients-caption {
+    font-weight: 600;
+    font-size: inherit;
+    text-transform: uppercase;
+}

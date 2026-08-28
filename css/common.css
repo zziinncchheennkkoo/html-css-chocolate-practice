@@ -1,0 +1,106 @@
+/* Globol styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111;
+    background-color: #fafafa;
+}
+
+/* прибрали тоски  */
+ol, 
+ul {
+list-style-type: none;
+}
+
+/* прибрали підкреслення у посилань */
+a {
+text-decoration: none;
+color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+
+/* Base styles */
+
+.section {}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.accent{
+    color: #fd9222;
+}
+
+.logo {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
+
+.logo-icon {}
+
+.sociasls {}
+
+.sociasls-item {}
+
+.sociasls-link {}
+
+.sociasls-icon {}
+
+
+/* Button */
+.btn {
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+}
+
+.btn-filled {
+    color: #fff;
+    background: #fd9222;
+}
+
+.btn-filled:hover,
+.btn-filled:focus {
+    color: #fd9222;
+    background: rgba(253, 146, 34, 0.1);
+}
+
+.btn-outlined { 
+}
+
+.primary {
+    color: #fff;
+}
+
+.primary:hover,
+.primary:focus {
+    color: #fd9222;
+}
+
+.secondary {
+    color: #111;
+}
+
+.secondary:hover,
+.secondary:focus{
+    color: #fff;
+    background: #fd9222;
+}
+
+
+/*  */
