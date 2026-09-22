@@ -1,12 +1,41 @@
-.ingredients {}
+.ingredients {
+    padding-top: 120px;
+}
 
 .ingredients-title {}
 
-.ingredients-list {}
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+}
 
-.ingredients-item {}
+.ingredients-item {
+    width: calc((100% - 32px * 3) / 4);
 
-.ingredients-ill {}
+    border-radius: 15px;
+    padding: 28px 24px;
+}
+
+/* a*n*b */   /* n=0; n=1-7 */
+.ingredients-item:nth-child(2n) {
+    border: 1px solid #fd9222;
+    background-color: #fff;
+}
+
+.ingredients-item:nth-child(4n + 1) {
+    background-color: #fd9222;
+}
+
+.ingredients-item:nth-child(4n + 3) {
+    background-color: #1e1823;
+    color: #fff;
+}
+
+.ingredients-ill {
+    margin-bottom: 36px;
+}
 
 .ingredients-caption {
     font-weight: 600;

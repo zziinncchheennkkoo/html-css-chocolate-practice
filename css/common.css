@@ -9,10 +9,27 @@ body {
     background-color: #fafafa;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 /* прибрали тоски  */
 ol, 
 ul {
 list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 /* прибрали підкреслення у посилань */
@@ -21,16 +38,47 @@ text-decoration: none;
 color: inherit;
 }
 
+button {
+cursor: pointer;
+}
+
 address {
     font-style: normal;
 }
 
 
+img {
+    display: block;
+}
+
+
+
+
+
 /* Base styles */
 
-.section {}
+/* прихований H2 */
+.sr-only {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        margin: -1px;
+}
+
+.section {
+    padding: 60px 0;
+}
 
 .section-title {
+    max-width: 412px;
+    margin: 0 auto 50px;
+    
     font-weight: 600;
     font-size: 24px;
     line-height: 1.17;
@@ -42,31 +90,79 @@ address {
     color: #fd9222;
 }
 
+.container {
+    max-width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+
     font-weight: 700;
-        font-size: 18px;
-        line-height: 1.11;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .logo-icon {}
 
-.sociasls {}
 
-.sociasls-item {}
+.sociasls {
+    display: flex;
+    gap: 14px;
+    
+}
 
-.sociasls-link {}
+.sociasls-item {
+    width: 40px;
+    height: 40px;
+}
 
-.sociasls-icon {}
+.sociasls-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 10px;
+}
+
+.sociasls-link:hover,
+.sociasls-link:focus {
+    border: 1px solid rgba(253, 146, 34, 0.1);
+}
+
+.sociasls-light .sociasls-link {
+    background-color: #fff;
+}
+
+.sociasls-icon {
+    
+}
+
+
 
 
 /* Button */
 .btn {
-    font-weight: 600;
+    padding: 14px 40px;
 
+    font-weight: 600;
     background-color: transparent;
-    border: none;
+    border: 1px solid transparent;
+
+    border-radius: 100px;
 }
 
 .btn-filled {
@@ -81,18 +177,25 @@ address {
 }
 
 .btn-outlined { 
+
 }
 
 .primary {
+    border-color: #fff;
     color: #fff;
 }
 
 .primary:hover,
 .primary:focus {
+    border-color: #fd9222;
     color: #fd9222;
 }
 
 .secondary {
+    display: block;
+    margin: 0 auto;
+
+    border-color: #fd9222;
     color: #111;
 }
 
